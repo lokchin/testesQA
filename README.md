@@ -132,20 +132,20 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
 > A barra de pesquisa é aberta ao usuário, podendo pesquisar os produtos disponíveis na loja, uma teste de exploração é suficiente e eficaz para verificar a funcionalidade desse elemento.
 
 #### O teste
-> Realizando o teste, percebi que a Pichau possui uma dor de regra de negócio assim como muitos ecommerces, que é a falta de um SEO eficaz. Por exemplo, ao procurar por "Computador i3", aparecem os modelos específicos que possuem i3, ao procurar por "Processador i3", aparecem apenas os processadores, ao procurar apenas por "i3", o sistema mostra os computadores montados com i3 e não os processadores. Pesquisando algo fora de contexto, o sistema não retorna nenhum produto. Ao usar uma VPN e colocar para áreas remotas, há muitos produtos indisponíveis.
+> Realizando o teste, percebi que a Pichau possui uma dor de regra de negócio assim como muitos ecommerces, que é a falta de um Lógica de busca eficaz. Por exemplo, ao procurar por "Computador i3", aparecem os modelos específicos que possuem i3, ao procurar por "Processador i3", aparecem apenas os processadores, ao procurar apenas por "i3", o sistema mostra os computadores montados com i3 e não os processadores. Pesquisando algo fora de contexto, o sistema não retorna nenhum produto. Ao usar uma VPN e colocar para áreas remotas, há muitos produtos indisponíveis.
 
 #### Conclusão
 A barra de pesquisa funciona perfeitamente para o usuário que procura algo específico, mas dificulta para o usuário leigo.
 
 ### Parâmetros de teste
-#### SEO
-- O SEO é um fator importante em pesquisas, ajuda o usuário a encontrar o que procura, e no contexto técnico da Pichau, é fundamental.
+#### Lógica de busca
+- A Lógica de busca é um fator importante em pesquisas, ajuda o usuário a encontrar o que procura, e no contexto técnico da Pichau, é fundamental.
 #### Disponibilidade baseado em CEP
 - Se algo pesquisado se encontra disponível ou não, baseado na localização do usuário.
 
 ### Criticidade de Defeitos:
 - Baixa: Checkbox com a marcação fora da caixa em alguns campos.
-- Média: SEO em conflito dependendo do que é pesquisado.
+- Média: Lógica de busca em conflito dependendo do que é pesquisado.
 - Alta: Indisponibilidade dependendo do local.
 
 
@@ -260,9 +260,24 @@ O SLA (Service Level Agreement) de resolução para cada nível de criticidade d
 #### Passos para reproduzir
 1. Abra o navegador no celular.
 2. Abra a seção de montagem de computadores.
-3. Monte um computador de forma que forme um aviso.
+3. Monte um computador de forma que forme um aviso, como "pouca memória RAM"
 
 #### Resultados esperados
 O site deve ser completamente responsivo.
 
 #### Defeito 2:
+**Descrição**: A Lógica de busca está sem acurácia, não busca produtos misturados nas primeiras alternativas
+
+#### Criticidade
+- Nível: Baixo
+- Impacto: O sistema não facilita para usuários leigos em termos técnicos, o que acaba reduzindo vendas.
+
+#### Passos para reproduzir
+1. Abra o site no computador
+2. Pesquise algo que possa gerar resultado ambíguo
+
+### 5.0 - Intragrante
+
+Aluno       |Professora        | Turma | Matéria
+------------|------------------|-------|---------
+Bruno Santos Lokchin | Gabriela Martins de Jesus | CC5N | Qualidade e Teste de Software
