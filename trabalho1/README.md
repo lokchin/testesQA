@@ -75,7 +75,7 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
     </tr>
     <tr>
         <th>
-            Técnica:
+            Método de Execução
         </th>
         <th colspan="2">
             (x) manual
@@ -86,7 +86,7 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
     </tr>
     <tr>
         <th>
-            Estágio do teste
+            Nível de teste
         </th>
         <th>
             Integração ( )
@@ -97,19 +97,16 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
         <th>
             Unidade (x)
         </th>
-        <th>
-            Aceitação ( )
-        </th>
     </tr>
     <tr>
         <th>
-            Abordagem do teste
+            Técnica
         </th>
         <th colspan="2">
-            Caixa branca (x)
+            Caixa Estrutural ( )
         </th>
         <th colspan="2">
-            Caixa preta ( )
+            Caixa Funcional (x)
         </th>
     </tr>
     <tr>
@@ -161,7 +158,7 @@ A barra de pesquisa funciona perfeitamente para o usuário que procura algo espe
     </tr>
     <tr>
         <th>
-            Técnica:
+            Método de Execução
         </th>
         <th colspan="2">
             (x) manual
@@ -172,30 +169,27 @@ A barra de pesquisa funciona perfeitamente para o usuário que procura algo espe
     </tr>
     <tr>
         <th>
-            Estágio do teste
+            Nível de teste
         </th>
         <th>
-            Integração (x)
+            Integração ( )
         </th>
         <th>
             Sistema ( )
         </th>
         <th>
-            Unidade ( )
-        </th>
-        <th>
-            Aceitação ( )
+            Unidade (x)
         </th>
     </tr>
     <tr>
         <th>
-            Abordagem do teste
+            Técnica
         </th>
         <th colspan="2">
-            Caixa branca ( )
+            Caixa Estrutural ( )
         </th>
         <th colspan="2">
-            Caixa preta (x)
+            Caixa Funcional (x)
         </th>
     </tr>
     <tr>
@@ -229,8 +223,8 @@ Windows 11 Home    | Google Chrome      | 124.0.6367.156
 ### 4.2 SLA de Resolução
 O SLA (Service Level Agreement) de resolução para cada nível de criticidade definida é fundamental para garantir que os problemas identificados sejam tratados de forma oportuna e eficiente. Abaixo estão os SLAs propostos para cada nível de criticidade:
 
-- Baixa Criticidade: Resolução dentro de 7 dias úteis.
-- Média Criticidade: Resolução dentro de 5 dias úteis.
+- Baixa Criticidade: Resolução dentro de 5 dias úteis.
+- Média Criticidade: Resolução dentro de 2 dias úteis.
 - Alta Criticidade: Resolução dentro de 48 horas úteis.
 
 #### Exemplos de SLAs de empresas:
