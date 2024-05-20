@@ -3,10 +3,10 @@
 # 1 - Requisitos Funcionais [RF]:
 
 ### RF1 - Funcionalidades Gerais:
-- **Cenário de teste 1: Campo de Pesquisa**
-  - CT 01: [Nome de algum produto], [Produto encontrado]
-  - CT 02: [Nome aleatório], [Produto não encontrado]
-  - CT 03: [Texto fora do alfabeto romano], [Erro: não reconhece o input]
+- **Cenário de teste 1: Linguagens aceitas no campo de pesquisa**
+  - CT 01: [Input de "i3 processor"], [Passou]
+  - CT 02: [Input de "processador i3"], [Passou]
+  - CT 03: [Input de "i3處理器"], [Exceção "500" lançada, não passou]
 
 - **Cenário de teste 2: Campo de preenchimento de CEP**
   - CT 01: [Números entre [0,9]], [Limite de 8 números, com a adição automática de "-"]
