@@ -103,10 +103,10 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
             Técnica
         </th>
         <th colspan="2">
-            Caixa Estrutural ( )
+            Teste Estrutural ( )
         </th>
         <th colspan="2">
-            Caixa Funcional (x)
+            Teste Funcional (x)
         </th>
     </tr>
     <tr>
@@ -186,10 +186,10 @@ A barra de pesquisa funciona perfeitamente para o usuário que procura algo espe
             Técnica
         </th>
         <th colspan="2">
-            Caixa Estrutural ( )
+            Teste Estrutural ( )
         </th>
         <th colspan="2">
-            Caixa Funcional (x)
+            Teste Funcional (x)
         </th>
     </tr>
     <tr>
