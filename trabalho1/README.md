@@ -270,7 +270,7 @@ O site deve ser completamente responsivo.
 1. Abra o site no computador
 2. Pesquise algo que possa gerar resultado ambíguo
 
-### 5.0 - Intragrante
+### 5.0 - Integrante
 
 Aluno       |Professora        | Turma | Matéria
 ------------|------------------|-------|---------
