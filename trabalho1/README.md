@@ -260,15 +260,16 @@ O SLA (Service Level Agreement) de resolução para cada nível de criticidade d
 O site deve ser completamente responsivo.
 
 #### Defeito 2:
-**Descrição**: A Lógica de busca está sem acurácia, não busca produtos misturados nas primeiras alternativas
+**Descrição**: O site não é preciso com termos ambíguos, por exemplo: "Computador i3" e "i3"
 
 #### Criticidade
-- Nível: Baixo
+- Nível: Médio
 - Impacto: O sistema não facilita para usuários leigos em termos técnicos, o que acaba reduzindo vendas.
 
 #### Passos para reproduzir
 1. Abra o site no computador
-2. Pesquise algo que possa gerar resultado ambíguo
+2. Pesquise "i3"
+3. O site aparecerá apenas computadores e vai ignorar os processadores separadamente.
 
 ### 5.0 - Integrante
 
