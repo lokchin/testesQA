@@ -16,10 +16,8 @@ Este documento detalha o plano de testes abrangente para o ecommerce Pichau, com
 
 Com esse documento, é possível:
 - Identificar informações de projeto existentes e os componentes de software que devem ser testados.
-- Listar os Requisitos a testar.
-- Recomendar e descrever as estratégias de teste a serem empregadas.
-- Identificar os recursos necessários e prover uma estimativa dos esforços de teste.
-- Listar os elementos resultantes do projeto de testes.
+- Ver quais requisitos são testados
+- Verificar os resultados dos testes
 
 ## 2 - Requisitos
 
@@ -37,12 +35,6 @@ IDREQ-2                       |       Barra de pesquisa
 Esta seção deve conter os tipos de testes escolhidos para cada iteração do projeto.
 
 ### 3.1 Requisito 1: Seção de montagem de computadores
-
-#### Teste de Interface
-> O teste de interface de usuário (UI), também conhecido como teste de GUI (Graphical User Interface), foca em avaliar a usabilidade, funcionalidade, acessibilidade e estética da interface de um software, aplicativo ou site. Ele visa garantir que a interface seja intuitiva, fácil de usar, agradável esteticamente e atenda às expectativas dos usuários.
-
-#### Por que esse teste?
-> Por ser uma seção onde o usuário escolhe como montar um computador do zero, e que há muitas regras e condicionais para uma montagem correta, o que torma o usuário facilmente sucetível a erro, então optei pelo teste de usabilidade, um ramo do teste de interface.
 
 #### O teste
 > Ao iniciar a testagem, notei que as principais peças são escolhidas primeiro e em seguida o usuário pode escolher as peças compatíveis com a primeira escolhida. Por exemplo, caso escolha um processador da AMD, não aparecerá placas-mãe compatíveis apenas com Intel, ao escolher uma fonte, o sistema recomenda uma baseado no consumo das peças escolhidas. Os elementos de fato seguem a psicologia das cores e a navegabilidade facilitada.
@@ -122,23 +114,16 @@ O Teste de Interface induz que um sistema falso com o intuito de aplicar golpes 
 
 ### 3.2 Requisito 2: Barra de Pesquisa
 
-#### Teste exploratório
-> O teste exploratório, também conhecido como teste ad-hoc, é uma abordagem dinâmica e flexível para testar software. Ao contrário dos testes tradicionais, que seguem um plano predefinido, o teste exploratório incentiva a exploração livre e criativa do software, permitindo a descoberta de falhas inesperadas e a identificação de áreas que podem ser aprimoradas.
-
-#### Por que esse teste?
-> A barra de pesquisa é aberta ao usuário, podendo pesquisar os produtos disponíveis na loja, uma teste de exploração é suficiente e eficaz para verificar a funcionalidade desse elemento.
-
-#### O teste
-> Realizando o teste, percebi que a Pichau possui uma dor de regra de negócio assim como muitos ecommerces, que é a falta de um Lógica de busca eficaz. Por exemplo, ao procurar por "Computador i3", aparecem os modelos específicos que possuem i3, ao procurar por "Processador i3", aparecem apenas os processadores, ao procurar apenas por "i3", o sistema mostra os computadores montados com i3 e não os processadores. Pesquisando algo fora de contexto, o sistema não retorna nenhum produto. Ao usar uma VPN e colocar para áreas remotas, há muitos produtos indisponíveis.
+> Realizando o teste, percebi que a Pichau possui um problema no input, apenas aceita input em UTF-8, caso o usuário escreva em uma outra lingua como o chinês, por exemplo, não terá êxito. Além isso, a lógica de busca está comprometida, não há como distinguir dois termos técnicos baseados no inglês ou português.
 
 #### Conclusão
-A barra de pesquisa funciona perfeitamente para o usuário que procura algo específico, mas dificulta para o usuário leigo.
+A barra de pesquisa funciona perfeitamente para o usuário brasileiro, mas dificulta para estrangeiros.
 
 ### Parâmetros de teste
 #### Lógica de busca
 - A Lógica de busca é um fator importante em pesquisas, ajuda o usuário a encontrar o que procura, e no contexto técnico da Pichau, é fundamental.
-#### Disponibilidade baseado em CEP
-- Se algo pesquisado se encontra disponível ou não, baseado na localização do usuário.
+#### Input de busca
+- O tipo do caracter que o usuário inserindo é válido no sistema.
 
 ### Criticidade de Defeitos:
 - Baixa: Checkbox com a marcação fora da caixa em alguns campos.
