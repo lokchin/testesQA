@@ -225,23 +225,7 @@ O SLA (Service Level Agreement) de resolução para cada nível de criticidade d
 
 - Baixa Criticidade: Resolução dentro de 5 dias úteis.
 - Média Criticidade: Resolução dentro de 2 dias úteis.
-- Alta Criticidade: Resolução dentro de 48 horas úteis.
-
-#### Exemplos de SLAs de empresas:
-1. DigitalOcean:
-- Baixa Criticidade: Resolução dentro de 48 horas.
-- Média Criticidade: Resolução dentro de 24 horas.
-- Alta Criticidade: Resolução dentro de 4 horas.
-
-2. Rackspace:
-- Baixa Criticidade: Resolução dentro de 3 dias úteis.
-- Média Criticidade: Resolução dentro de 1 dia útil.
-- Alta Criticidade: Resolução dentro de 4 horas.
-  
-3. Heroku:
-- Baixa Criticidade: Resolução dentro de 2 dias úteis.
-- Média Criticidade: Resolução dentro de 1 dia útil.
-- Alta Criticidade: Resolução dentro de 4 horas.
+- Alta Criticidade: Resolução dentro de 24 horas.
 
 ### 4.4 - Relatório de Defeito Identificado
 #### Defeito 1:
